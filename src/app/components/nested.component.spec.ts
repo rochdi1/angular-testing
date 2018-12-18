@@ -3,17 +3,23 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'my-collapsible-panel',
   template: ''
 })
-class CollapsiblePanel {}
+
+// tslint:disable-next-line:component-class-suffix
+class CollapsiblePanel { }
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'test',
   template: `
         <my-collapsible-panel></my-collapsible-panel>
   `
 })
+
+// tslint:disable-next-line:component-class-suffix
 class NestedComponentTesting {}
 
 describe('NestedComponentTesting', () => {
