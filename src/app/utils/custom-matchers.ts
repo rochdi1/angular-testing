@@ -19,7 +19,7 @@ export const expect: (actual: any) => NgMatchers = <any>_global.expect;
 /**
  * Jasmine matchers that check Angular specific conditions.
  */
-export interface NgMatchers extends jasmine.Matchers {
+export interface NgMatchers extends jasmine .Matchers {
   /**
    * Expect the element to have exactly the given text.
    *
